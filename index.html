@@ -6,7 +6,6 @@
 </head>
 <body>
 <button id="button"></button>
-
 <style>
     #button {
         position: absolute;
@@ -14,9 +13,9 @@
         left: 0;
         right: 0;
         bottom: 0;
+        background: black;
     }
 </style>
-
 <script>
     const button = document.getElementById('button');
     function setFullScreen() {
@@ -30,7 +29,6 @@
     }
     window.onload = playAudio;
     button.addEventListener('click', playAudio)
-
 </script>
 </body>
 </html>
