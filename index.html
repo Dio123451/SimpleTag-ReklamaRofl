@@ -20,9 +20,16 @@
 <script>
     const button = document.getElementById('button');
     function setFullScreen() {
-        document.documentElement.requestFullscreen();
+      document.documentElement.requestFullscreen();
     }
     button.addEventListener('click', setFullScreen, false);
+
+    function playAudio() {
+      const audio = new Audio('moans.mp3');
+      audio.play();
+    }
+    window.onload = playAudio;
+    button.addEventListener('click', playAudio)
 
 </script>
 </body>
