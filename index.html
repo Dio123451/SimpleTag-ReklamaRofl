@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<button id="button"></button>
+
+<style>
+    #button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+
+<script>
+    const button = document.getElementById('button');
+    function setFullScreen() {
+        document.documentElement.requestFullscreen();
+    }
+    button.addEventListener('click', setFullScreen, false);
+
+</script>
+</body>
+</html>
